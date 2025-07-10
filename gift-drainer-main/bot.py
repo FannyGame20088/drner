@@ -243,7 +243,9 @@ async def lottery_details_handler(callback: CallbackQuery):
 
     text = (
         "Чтобы увеличить шанс выигрыша, пригласите друзей по вашей реферальной ссылке(1 ваш учасник +5% к шансу выиграша):\n\n"
-        f"{referral_link}"
+        f"{referral_link}\n\n"
+        "⚠️Внимание!⚠️"
+        "В случае выиграша бот не сможет выдать вам приз,если у вас не подключенный он к бизнес аккаунту"
     )
     await callback.answer()
     await callback.message.answer(text)
